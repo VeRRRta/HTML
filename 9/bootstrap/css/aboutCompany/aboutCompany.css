@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation fo about company page:
+    -header
+    -info
+    -footer
+*/
+
+/* header */
+
+.header__container {
+    max-width: 1440px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.nav {
+    justify-content: end;
+}
+
+.nav__list {
+    margin-bottom: 58px;
+}
+
+.list__item {
+    display: inline;
+    border-radius: 20px;
+    background: #F3F3F3;
+    padding: 15px;
+    margin-right: 23px;
+}
+
+.list__link {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.list__item:nth-child(2) {
+    display: inline-block;
+    transform: scale(1.2);
+    background-color: #9A1212;
+}
+
+.list__item:nth-child(2) .list__link {
+    color: #fff;
+}
+
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+/* info */
+
+.info {
+    padding: 89px 57px 97px;
+}
+
+.info__content {
+    display: flex;
+    flex-direction: row;
+}
+
+.info__text {
+    font-size: 29px;
+    line-height: 42px;
+    text-align: right;
+    color: #000;
+}
+
+.info__text:first-child {
+    float: left;
+
+}
+
+/* footer */
+
+.footer {
+    padding: 25px;
+    background-color: #F3F3F3;
+    
+}
+
+.footer__text {
+    font-size: 24px;
+    line-height: 35px;
+    color: #9A1212;
+    text-align: right;
+    display: block;
+}
+
+
+@media (max-width: 970px) {
+    .header__container {
+        padding: 0;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .nav__list {
+        text-align: center;
+    }
+
+    .about__product .col-md-2 {
+        text-align: center;
+    }
+}
+
+@media(min-width: 750px) and (max-width: 1000px) {
+    .list__item:last-of-type {
+        position: relative;
+        top: 35px;
+    }
+}
+
+@media (max-width: 970px) {
+    .header__container {
+        padding: 0;
+    }
+
+    .nav {
+        justify-self: inherit;
+    }
+
+    .nav__list {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .header__container {
+        /* flex-direction: column; */
+    }
+
+    .nav__list {
+        text-align: center;
+    }
+
+
+    .info {
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 510px) {
+    .info__content {
+        text-align: center;
+    }
+
+    .info__content img{
+        margin-bottom: 30px;
+    }
+
+    .info__text {
+        text-align: center;
+        line-height: 100%;
+        font-size: 25px;
+    }
+
+
+    .footer__text {
+        font-size: 16px;
+    }
+
+    .list__item {
+        margin-right: 8px;
+    }
+
+    .list__link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 420px) {
+    .list__item {
+        display: block;
+        margin-bottom: 20px;
+        position: static !important;
+        top: 0;
+    }
+
+    .info {
+        padding: 50px 10px;
+    }
+}

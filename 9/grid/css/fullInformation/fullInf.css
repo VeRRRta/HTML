@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation fo full information page:
+    -header
+    -info
+    -footer
+*/
+
+/* header */
+
+.header__container {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    max-width: 1440px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.nav {
+    justify-self: end;
+}
+
+.nav__list {
+    margin-bottom: 58px;
+}
+
+.list__item {
+    display: inline;
+    border-radius: 20px;
+    background: #F3F3F3;
+    padding: 15px;
+    margin-right: 23px;
+}
+
+.list__link {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+
+/* info */
+
+.about {
+    margin-top: 55px;
+    padding: 0 155px;
+    box-sizing: border-box;
+}
+
+.about__title {
+    font-size: 36px;
+    line-height: 52px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.about__product {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    background: #9A1212;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.about__product_text {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.about__product img {
+    border-radius: 45px;
+    -webkit-box-shadow: 0px 3px 10px 4px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 3px 10px 4px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 3px 10px 4px rgba(34, 60, 80, 0.2);
+}
+
+/* footer */
+
+footer {
+    background: url("../../assets/images/fullInformation/footer/Mask\ Group.png") 100% 100% no-repeat;
+}
+
+footer>img {
+    visibility: hidden;
+}
+
+.footer {
+    padding: 25px;
+    background-color: #F3F3F3;
+    mix-blend-mode: multiply;
+}
+
+
+/* media */
+
+@media (max-width: 750px) {
+    .about {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 970px) {
+    .header__container {
+        padding: 0;
+        align-items: center;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .nav {
+        justify-self: inherit;
+    }
+
+    .nav__list {
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 650px) {
+
+    .about {
+        padding: 0 70px;
+    }
+
+    .about__title {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .about__product {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .about__product img {
+        margin-top: 40px;
+    }
+
+}
+
+
+@media (max-width: 499px) {
+    .header__container {
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        padding: 0 10px;
+    }
+
+    .about__title {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .about__product_text {
+        font-size: 25px;
+        margin-right: 0;
+        text-align: center;
+        line-height: 100%;
+    }
+
+    .about__product {
+        grid-template-columns: 6fr;
+        justify-items: center;
+    }
+
+    .about__product img {
+        margin-top: 40px;
+    }
+
+    .nav__list {
+        text-align: center;
+    }
+
+    .list__item {
+        margin-right: 8px;
+    }
+
+    .list__link {
+        font-size: 16px;
+    }
+
+    footer {
+        background: url("../../assets/images/fullInformation/footer/Mask\ Group.png") 250% 100% no-repeat;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .list__item {
+        display: block;
+        margin-bottom: 20px;
+        top: 0;
+        margin-right: 0;
+    }
+}

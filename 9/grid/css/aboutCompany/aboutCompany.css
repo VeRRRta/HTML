@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation fo about company page:
+    -header
+    -info
+    -footer
+*/
+
+/* header */
+
+.header__container {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    max-width: 1440px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.nav {
+    justify-self: end;
+}
+
+.nav__list {
+    margin-bottom: 58px;
+}
+
+.list__item {
+    display: inline;
+    border-radius: 20px;
+    background: #F3F3F3;
+    padding: 15px;
+    margin-right: 23px;
+}
+
+.list__link {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.list__item:nth-child(2) {
+    display: inline-block;
+    transform: scale(1.2);
+    background-color: #9A1212;
+}
+
+.list__item:nth-child(2) .list__link {
+    color: #fff;
+}
+
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+/* info */
+
+.info {
+    padding: 89px 57px 97px;
+}
+
+.info__content {
+    display: flex;
+    flex-direction: row;
+}
+
+.info__text {
+    font-size: 29px;
+    line-height: 42px;
+    text-align: right;
+    color: #000;
+}
+
+.info__text:first-child {
+    float: left;
+
+}
+
+/* footer */
+
+.footer {
+    padding: 25px;
+    background-color: #F3F3F3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.footer__text {
+    font-size: 24px;
+    line-height: 35px;
+    color: #9A1212;
+    text-align: right;
+    display: block;
+}
+
+
+@media (max-width: 970px) {
+    .header__container {
+        padding: 0;
+        align-items: center;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .nav {
+        justify-self: inherit;
+    }
+
+    .nav__list {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .header__container {
+        flex-direction: column;
+    }
+
+    .nav__list {
+        text-align: center;
+    }
+
+
+    .info {
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 510px) {
+    .info__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .info__content img{
+        margin-bottom: 30px;
+    }
+
+    .info__text {
+        text-align: center;
+        line-height: 100%;
+        font-size: 25px;
+    }
+
+
+    .footer__text {
+        font-size: 16px;
+    }
+
+    .list__item {
+        margin-right: 8px;
+    }
+
+    .list__link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .list__item {
+        display: block;
+        margin-bottom: 20px;
+        position: static !important;
+        top: 0;
+    }
+}
