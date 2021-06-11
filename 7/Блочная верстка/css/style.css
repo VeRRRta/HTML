@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: block;
+}
+
+#main {
+    width: 100%;
+}
+
+#header {
+    background: url("../images/header.jpg") 100% 100% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+}
+
+#menu1 {
+    background: url("../images/menu1.jpg") 100% 100% no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 57px;
+}
+
+#menu2 {
+    background: url("../images/menu2.jpg") 100% 100% no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 60px;
+}
+
+#menu3 {
+    background: url("../images/menu3.jpg") 100% 100% no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 120px;
+}
+
+.main__cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#rekclama {
+    margin-top: 20px;
+    width: 20%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+#reklama_top {
+    width: 263px;
+    float: left;
+    background: url("../images/reklama_top.jpg") 100% 100% no-repeat;
+    height: 80px;
+}
+
+#reklama_text {
+    width: 263px;
+    float: left;
+    background: url("../images/reklama_bg.jpg") 100% 100% repeat-y;
+    height: 440px;  
+}
+
+#reklama_bottom {
+    width: 263px;
+    float: left;
+    background: url("../images/reklama_bottom.jpg") 100% 100% no-repeat;
+    height: 35px;
+}
+
+#content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.block1, .block2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__cont img{
+    width: 350px;
+    height: 200px;
+}
+
+p{
+    font-size: 18px;
+    width: 70%;
+    margin-left: 50px;
+}
+
+#footer {
+    width: 100%;
+    background: url("../images/footer.jpg") 100% 100% no-repeat;
+    background-size: cover;
+    height: 60px;
+}
