@@ -1,0 +1,130 @@
+
+
+/* задание 1 */
+
+/* #menu {
+    width: 200px;
+    background: yellow;
+}
+
+#menu a {
+    color: #2b3845;
+    text-decoration: none;
+    display: block;
+}
+
+#menu a:hover {
+    color: #92A9BF;
+    background: blue;
+} */
+
+
+/* Задание 2 */
+
+/* h5, p {
+    display: inline;
+} */
+
+/* Задание 3 */
+
+/* h6 {
+    display: list-item;
+} */
+
+/* Задание 4 */
+
+/* #p2 {
+    display: none;
+}
+
+#p4 {
+    visibility: hidden;
+} */
+
+/* Задание 11 */
+
+
+/* Задание 13 */
+
+/* 
+body {
+    margin: 0px;
+}
+
+#header {
+    background: darked;
+    width: 715px;
+    height: 100px;
+}
+
+#menu {
+    background: oldlace;
+    width: 190px;
+    height: 300px;
+} */
+
+/* #content {
+    background: oldlace;
+    width: 525px;
+    height: 300px; */
+    /* Задание 12 */
+    /* position: absolute;
+    left: 190px;
+    top: 100px;
+} */
+
+/* #footer {
+    background: darked;
+    width: 715px;
+    height: 30px;
+} */
+
+/* Задание 14 */
+
+/* #news {
+    background: yellow;
+    width: 150px;
+    height: 280px;
+    position: absolute;
+    left: 365px;
+    top: 10px;
+} */
+
+/* Задание 15 */
+
+/* #block1, #block2, #block3 {
+    border: 1px solid red;
+    width: 150px;
+    height: 50px;
+} */
+
+/* Задание 16 */
+
+/* #block2 {
+    position: relative;
+    left: 50px;
+    top: 25px;
+} */
+
+/* Задание 17 */
+
+/* Задание 18 добавляем свойство float*/
+
+#blok1 {
+    border: 1px solid red;
+    width: 150px;
+    height: 50px;
+    float: right;
+}
+
+/* Задание 19 */
+
+/* Задание 20 добавили clear */
+
+#blok2 {
+    border: 1px solid red;
+    width: 150px;
+    height: 50px;
+    float: right;
+    clear: right;
+}
