@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+    Navigation for laba8:
+
+        -introduction
+        -info__1
+        -info__2
+*/
+
+
+/* introduction */
+
+#introduction {
+    width: 100%;
+    background: linear-gradient(rgba(100, 181, 246, 1), rgba(0, 0, 0, 0.8)), url("../images/introduction/background.jpg") 100% 100% no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.introduction__cont {
+    padding-left: 60px;
+}
+
+@media (max-width: 500px) {
+    .introduction__cont {
+        padding-left: 20px;
+    }
+}
+
+.introduction__title {
+    font-size: 30px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.introduction__text {
+    color: #fff;
+    font-size: 18px;
+    width: 300px;
+}
+
+/* info__1 */
+
+.text-black-40 {
+    color: rgba(0, 0, 0, 0.4)
+}
+
+/* info__2 */
+
+.fill-80-viewport {
+    min-height: 80vh
+}
+
+/* info__3 */
+
+#info__3 {
+    background: linear-gradient(rgba(100, 181, 246, 0.3), rgba(0, 0, 0, 0.8)), url("../images/info3/foto.jpg") 100% 100%;
+    background-size: cover;
+}
+
+#feature-rundown img {
+    width: 246px;
+    height: 205px;
+}
+
+@media screen and (min-width: 768px) {
+    .basis-md-50 {
+        flex-basis: 50%
+    }
+}
+
+.fill-80-viewport {
+    min-height: 80vh
+}
+
+.text-white-40 {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.text-white-70 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#pricing button {
+    width: 300px;
+}
+
+.list-border-y li {
+    border-top: 1px solid
+}
+
+.list-border-y li:last-child {
+    border-bottom: 1px solid
+}
+
+.list-border-black-20 li,
+.list-border-black-20 li:last-child {
+    border-color: rgba(0, 0, 0, 0.2)
+}
