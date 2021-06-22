@@ -1,0 +1,36 @@
+.row{
+    display: flex;
+    background-color: ivory;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.row_cell {
+   padding: 10px;
+   flex: 1;
+   background-color: bisque;
+   margin-left: 5px;
+   margin-right: 5px;
+}
+.row_cell--2 {
+   flex: 2;
+}
+.row_cell--top {
+  align-self: flex-start;
+}
+.row_cell--bottom {
+  align-self: flex-end;
+}
+.row_cell--center{
+    align-self: flex-center;
+}
+.row--top {
+   align-items: flex-start; 
+}
+.row--center {
+   align-items: center
+}
+.row--bottom {
+   align-items: flex-end;
+}

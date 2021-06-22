@@ -1,0 +1,15 @@
+body {
+   display: flex;
+}
+main { 
+  flex: 1;
+  background-color: #E7E7E7;
+}
+aside { 
+  width: 20vw;
+  background-color: #C4C4C4;
+}
+
+.fill-viewport{
+    min-height: 100vh;
+}

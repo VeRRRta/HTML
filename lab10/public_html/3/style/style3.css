@@ -1,0 +1,30 @@
+body {
+   display: flex;
+   flex-direction: column;
+}
+.fill-viewport {
+  min-height: 100vh 
+}
+header, 
+footer { 
+  height: 20vh;
+  background-color: #E7E7E7;
+}
+main { 
+   flex: 1;
+}
+main { 
+  display: flex;
+}
+nav, 
+aside { 
+  width: 20vw;
+  background-color: #808080;
+  text-align: center;
+}
+article {
+   flex: 1;
+}
+nav {
+  order: -1
+}
